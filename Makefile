@@ -9,8 +9,8 @@ RBOOT_BUILD_BASE ?= build
 RBOOT_FW_BASE    ?= firmware
 
 ifndef XTENSA_BINDIR
-CC := xtensa-lx106-elf-gcc
-LD := xtensa-lx106-elf-gcc
+CC := $(HOME)/Espressif/esp-open-sdk/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc
+LD := $(HOME)/Espressif/esp-open-sdk/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc
 else
 CC := $(addprefix $(XTENSA_BINDIR)/,xtensa-lx106-elf-gcc)
 LD := $(addprefix $(XTENSA_BINDIR)/,xtensa-lx106-elf-gcc)
